@@ -1,0 +1,189 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: #333;
+    margin: 0;
+    padding: 6rem 20px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+  }
+  /* checkbox  */
+  input[type="checkbox"]:checked + label{
+    font-weight: bold;
+    background-color: #4CAF5023;
+    transition: all 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  input[type="checkbox"]:focus + label {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    outline: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration-color: #4CAF50;
+  }
+  input[type="checkbox"]:hover + label {
+    background-color: #4CAF5026;
+    transition: background-color 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration-color: #4CAF50;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 0.5s;
+    transition: text-decoration-thickness 0.5s;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+
+  }
+  /* radio  */
+  input[type="radio"]:checked + label{
+    font-weight: bold;
+    background-color: #4CAF5023;
+    transition: all 0.5s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  input[type="radio"]:focus + label {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    outline: none;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration-color: #4CAF50;
+  }
+  input[type="radio"]:hover + label {
+    background-color: #4CAF5026;
+    transition: background-color 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration-color: #4CAF50;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 0.5s;
+    transition: text-decoration-thickness 0.5s;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+
+  }
+  /* submit  */
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s ;
+    width: 100%;
+    @media (min-width : 768px) {
+      width: auto;
+    }
+  }
+  button:hover {
+    background-color: #0fb600;
+    transition: background-color 2s ease-in-out ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+    text-decoration-color: #14d70266;
+    font-weight: bold;
+    text-decoration-style: double;
+    text-decoration-thickness: 0.01px;
+    transition: text-decoration-color 0.5s;
+  }
+  label {
+    font-size: 16px;
+    cursor: pointer;
+    transition: font-size 0.5s;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+
+  }
+  /* myInput  */
+  #myInput {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 999px;
+    background-color: #ccc;
+    transition: background-color 0.5s;
+    font-size: 14px;
+    color: #1b1b1b;
+    @media (max-width: 460px)  {
+      width: 100%;
+      border-radius: 4px;
+    }
+    
+    &:focus {
+      background-color: #add;
+      outline: none;
+    }
+    &:hover {
+      background-color: #b8b8b8;
+    }
+  }
+  #firstName, #lastName {
+    width: 140px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #ccc;
+    transition: background-color 0.5s;
+    font-size: 14px;
+    color: #1b1b1b;
+    @media (max-width: 460px)  {
+      width: 100%;
+    }
+    
+    &:focus {
+      background-color: #add;
+      outline: none;
+    }
+    &:hover {
+      background-color: #b8b8b8;
+    }
+  }
+  #myInput::placeholder {
+    color: #444;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    font-size: 14px;
+    text-align: end;
+    font-style: italic;
+
+  }
+  #mySelect {
+    width: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    transition: background-color 0.5s;
+    font-size: 14px;
+    font-weight: 900;
+    color: #590000;
+    
+    &:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    &:hover {
+      background-color: #00ffd95b;
+    }
+  }
+  option {
+    color: #5b4aaa;
+    transition: color 0.5s;
+    font-weight: bold;
+    background-color: #ff9;
+  }
+  .mtdiv {
+    display: flex; flex-direction: column;
+    gap: 2rem;
+    color: peru;
+
+    @media (max-width: 460px)  {
+      gap: 14px;
+    }
+  }

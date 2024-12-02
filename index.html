@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <input type="checkbox" id="myCheckbox">
+ <label for="myCheckbox">Subscibe</label><br><br>
+ <input type="radio" name="radio" id="visaBtn">
+ <label for="visaBtn">Visa</label><br>
+ <input type="radio" name="radio" id="amexBtn">
+ <label for="amexBtn">American Express</label><br>
+ <input type="radio" name="radio" id="creditBtn">
+ <label for="creditBtn">Credit Card</label><br>
+ <input type="radio" name="radio" id="masterBtn">
+ <label for="masterBtn">MasterCard</label><br>
+ <input type="radio" name="radio" id="paypalBtn">
+ <label for="paypalBtn">PayPal</label><br>
+ <input type="radio" name="radio" id="verveBtn">
+ <label for="verveBtn">Verve</label><br>
+ <input type="radio" name="radio" id="googleBtn">
+ <label for="googleBtn">Google Pay</label>
+  <br><br>
+  <br><br>
+  <label for="myInput">Email:</label> 
+  <input type="email" id="myInput" placeholder="@email.com" required>
+  <br><br>
+  <label for="firstName">Names:</label>
+  <input placeholder="First name" type="text" id="firstName" required>
+  <input placeholder="Last name" type="text" id="lastName" required>
+  <br><br>
+  <div id="myDiv">
+    <label for="myDiv">Select your favorite color:</label>
+    <select  id="mySelect" title="Enter your preferred color">
+      <option hidden value="default" label="Colors"></option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <option value="yellow">Yellow</option>
+      <option value="purple">Purple</option>
+      <option value="orange">Orange</option>
+      <option value="pink">Pink</option>
+      <option value="black">Black</option>
+      <option value="brown">Brown</option>
+      <option value="gray">Gray</option>
+      <option value="white">White</option>
+      <option value="cyan">Cyan</option>
+      <option value="magenta">Magenta</option>
+      <option value="lime">Lime</option>
+      <option value="maroon">Maroon</option>
+      <option value="navy">Navy</option>
+      <option value="olive">Olive</option>
+      <option value="silver">Silver</option>
+      <option value="teal">Teal</option>
+      <option value="aqua">Aqua</option>
+      <option value="fuchsia">Fuchsia</option>
+      <option value="coral">Coral</option>
+      <option value="indigo">Indigo</option>
+      <option value="peru">Peru</option>
+    </select>
+  </div>
+  <br><br>
+  <button id="myBtn">Submit</button>
+  <br><br><br><br>
+  <div class="mtdiv">
+    <h3>info: </h3>
+    <h1 id="myH1"></h1>
+  <h4 id="myH2"></h4>
+  <h4 id="myH3"></h4>
+  <h4 id="myH4"></h4>
+  <h4 id="myH5"></h4>
+  <h4 id="myH6"></h4>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
